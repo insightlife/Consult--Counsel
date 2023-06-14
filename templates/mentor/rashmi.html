@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+{% extends 'master/base.html'%}
+{% load static%}
+<html lang="en">
+<head></head>
+<body>
+    {% block content %}
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-4"></div>
+            <div class="col-sm-4 align">
+                <img src="{% static 'rashmi.jpg'%}" class='mentor-self-image'><br>
+                <h3>Rashmi</h3>
+                <h3>Urban and Regional planning Expert</h3>
+                <p class="textsize">
+                    I am a graduate of Urban and Regional Planning from Maulana Azad National Institute of Technology, Bhopal,
+                    I graduated in the year 2019. My decision to pursue Urban and Regional Planning stems from the curiosity to understand places and people and
+                    Being from India which is currently amid issues pertaining to spatial planning and drowning with social and environmental challenges boosted my will to choose this field.
+                    Throughout my bachelor’s we a had number of projects which exposed me to a wide range of subjects from sociology,
+                    Environmental studies, Physical Planning, Economic Development, Transportation Planning & Management. Urban Planning being a broad subject dealing with various aspects
+                    I have been able to explore a wide range of subjects. After my graduation, I started working in Indian Institute for Human Settlements, Bangalore, where my work revolved around research,
+                    content development and map creations for several projects.
+                    I am interested in research work, where I get to integrate multidisciplinary fields.
+                </p>
+            </div>
+        </div>
+    </div>
+    {% endblock content %}
+</body>
+</html>

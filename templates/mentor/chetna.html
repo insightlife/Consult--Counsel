@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+{% extends 'master/base.html'%}
+{% load static%}
+<html lang="en">
+<head></head>
+<body>
+    {% block content %}
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-4"></div>
+            <div class="col-sm-4 align">
+                <img src="{% static 'chetana.jpg'%}" class='mentor-self-image'><br>
+                <h3>Chetna Mohanta</h3>
+                <h3>Beauty blogger</h3>
+                <h3>chetnamohanta78@gmail.com</h3>
+                <p class="textsize">
+                    Hey! I am Chetna Mohanta, a software engineer by profession and I pursue make-up as a hobby. Basically self learnt and had attended  an online make-up workshop. Love experimenting with colours. Recently started a beauty blogging page on Instagram as well.
+                    Do drop by so that I can pass on my knowledge on to you on this topic.
+                </p>
+            </div>
+        </div>
+    </div>
+  {% endblock content %}
+</body>
+</html>

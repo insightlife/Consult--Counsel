@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+{% extends 'master/base.html'%}
+{% load static%}
+<html lang="en">
+<head></head>
+<body>
+    {% block content %}
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-4"></div>
+            <div class="col-sm-4 align">
+                <img src="{% static 'ping.png'%}" class='mentor-self-image'><br>
+                <h3>Manasa Susirla</h3>
+                <h3>Software engineer at JP Morgan</h3>
+                <h3>manasa.susirla@gmail.com</h3>
+                <p class="textsize">
+                    As a full stack developer, I designed, developed, tested, deployed and maintained a web application, which helps users for
+                    spreading financial statements of different corporations.
+                    Built the UI from scratch using ReactJS and AG-grid.
+                    Coded end-to-end functionalities of the application by using Java 8 (Sprint Boot). Developed services and corresponding
+                    REST endpoints, wrote Unit tests and parallelly worked on the UI component of the functionality.
+                    Developed a service, which remotely monitors production server health from application logs and sends alerts, using splunk and spring boot actuator.
+                </p>
+            </div>
+        </div>
+    </div>
+    {% endblock content %}
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+{% extends 'master/base.html'%}
+{% load static%}
+<html lang="en">
+<head></head>
+<body>
+    {% block content %}
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-4"></div>
+            <div class="col-sm-4 align">
+                <img src="{% static 'sushil.jpg'%}" class='mentor-self-image'><br>
+                <h3>Sushil kumar Dhal</h3>
+                <h3>veterinarian</h3>
+                <h3>sushil90@gmail.com</h3>
+                <p class="textsize">
+                   I am a professional veterian.If you have any questions related to pet health, drop me a text! I am here to help you.
+                </p>
+            </div>
+        </div>
+    </div>
+    {% endblock content %}
+</body>
+</html>

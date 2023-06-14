@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+{% extends 'master/base.html'%}
+{% load static%}
+<html lang="en">
+<head></head>
+<body>
+    {% block content %}
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-4"></div>
+            <div class="col-sm-4 align">
+                <img src="{% static 'sarthak.jpg'%}" class='mentor-self-image'><br>
+                <h3>Sarthak</h3>
+                <h3>Career guide & Counsellor</h3>
+                <p class="textsize">
+                    Basically I am working in as a Manager at the Corporate office, JSW group, Bandra Kurla Complex,Maharashtra!
+                    Actually after btech, I encountered a phase in my life regarding which career path should I choose.
+                    Should it be related to my branch or not?What else? Truth to be told, I haven't seen colleges working hard to help guide the final year students
+                    towards choosing a good career goal or guiding them towards professional excellence. So i feel the urgent need to let students be prepared for the real world that ends right after their graduation degrees are handed over.
+                </p>
+            </div>
+        </div>
+    </div>
+    {% endblock content %}
+</body>
+</html>

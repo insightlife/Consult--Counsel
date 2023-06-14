@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+{% extends 'master/base.html'%}
+{% load static%}
+<html lang="en">
+<head></head>
+<body>
+    {% block content %}
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-4"></div>
+            <div class="col-sm-4 align">
+                <img src="{% static 'tikeswar.jpg'%}" class='mentor-self-image'><br>
+                <h3>Tikeshwar Dora</h3>
+                <h3>Stock Market Expert</h3>
+                <h3>doratikeshwar123@gmail.com</h3>
+                <p class="textsize">
+                    3+ Years Experience in Indian Stock Market.
+                    Stock Market Basics (No Trading or Investment TIPS)
+                    Only for Financial Knowledge.
+                </p>
+            </div>
+        </div>
+    </div>
+    {% endblock content %}
+</body>
+</html>

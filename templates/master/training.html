@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+{% extends 'master/base.html'%}
+{% load static %}
+<html lang="en">
+<head></head>
+<body>
+    {% block content %}
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-4">
+            </div>
+            <div class="col-sm-4">
+                <form method="POST" action="resume" class="form-group">
+                    {% csrf_token %}
+                    <h3 class="align form-heading">Fill the form correctly</h3>
+                    <label for="username" class="space"><div class="textsize">Name</div></label>
+                    <input type="text" name="Name" required class="form-control space">
+                    <label for="mobileno"><div class="textsize">Mobile</div> </label>
+                    <input type=text name="Mobileno"  class="form-control space">
+                    <label for="email"><div class="textsize">Email</div> </label>
+                    <input type=text name="Email" class="form-control space">
+                    <label for="field"><div class="textsize">Education</div></label>
+                    <input type=text name="Education" class="form-control space"><br>
+                    <button type="submit" name="submit" value="Submit" class="btn btn-dark space-button">SUBMIT</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    {%endblock content%}
+</body>
+</html>

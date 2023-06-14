@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+{% extends 'master/base.html'%}
+{% load static%}
+<html lang="en">
+<head></head>
+<body>
+    {% block content %}
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-4"></div>
+            <div class="col-sm-4 align">
+                <img src="{% static 'Subhasmit.jpeg'%}" class='mentor-self-image'><br>
+                <h3>Subhasmita Panda</h3>
+                <h3>Pega developer(CSSA Certified)</h3>
+                <p class="textsize">
+                    Hi I am Subhasmita Panda. I am a Pega developer(CSSA Certified) by profession and an Electrical engineer by degree. 
+                    I started my career at Capgemini as an Pega Developer and recently switched to Accenture. With more than 3 years experience, I have worked on end to end building applications, mainly focussing on Sections, Data transform, Activities , Data page, Data type, Agents, Reports etc. 
+                    If you want to clear your concepts in Pega then you can always connect with me. THANK YOU
+                </p>
+            </div>
+        </div>
+    </div>
+    {% endblock content %}
+</body>
+</html>

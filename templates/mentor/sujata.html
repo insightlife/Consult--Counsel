@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+{% extends 'master/base.html'%}
+{% load static%}
+<html lang="en">
+<head></head>
+<body>
+    {% block content %}
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-4"></div>
+            <div class="col-sm-4 align">
+                <img src="{% static 'sujata.jpg'%}" class='mentor-self-image'><br>
+                <h3>Sujata Priyadarshini Jena</h3>
+                <h3>Personal Mentor, writer & Astrophysict</h3>
+                <h3>sujatapriyadarshinijena@gmail</h3>
+                <p class="textsize">
+                    I am currently working as an IT professional. Whenever I am free ,I love to watch videos on astrophysics and do some research on that through internet ofcourse,as of now . And in my free time ,
+                    I love to write blogs on several topics , sometimes on the on-going scenarios or sometimes on some random stuffs .
+                </p>
+            </div>
+        </div>
+    </div>
+    {% endblock content %}
+</body>
+</html>

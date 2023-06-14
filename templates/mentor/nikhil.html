@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+{% extends 'master/base.html'%}
+{% load static%}
+<html lang="en">
+<head></head>
+<body>
+    {% block content %}
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-4"></div>
+            <div class="col-sm-4 align">
+                <img src="{% static 'nikhil.jpg'%}" class='mentor-self-image'><br>
+                <h3>Nikhil</h3>
+                <h3>MTech in Mechatronics and automation</h3>
+                <p class="textsize">
+                    PROJECT:
+                    Detection of heart diseases from ECG by using CNN
+                    Guide : Dr. Srikanth Rao. The objective is to detect heart diseases by extracting data from
+                    ECG using openCV and build a model based on Convolution Neural Network (CNN). Home Automation By using NI DAQ and LabView (2019)
+                    Guide : Dr. Gangadharan K. V. Home automation project was accomplished by using LabView
+                    Development environment and NI DAQ.
+                    Line Following Robot (2019)
+                    Guide: Dr. Gangadharan K. V. With the help of IR sensor we had controlled a four wheeled
+                    robot on a pre defined path. Design and development of Semi-automatic soldering machines for industrial capacitors (2016 - 2017)
+                    Guide: Mr. Desai Abhasysinghraje. To replace skilled labour by unskilled worker. By making the whole process of soldering automatic, we had
+                    reduced the process time and ultimately, cost reduction was there with very less error involved.
+                </p>
+            </div>
+        </div>
+    </div>
+    {% endblock content %}
+</body>
+</html>

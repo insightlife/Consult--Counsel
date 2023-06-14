@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+{% extends 'master/base.html'%}
+{% load static%}
+<html lang="en">
+<head></head>
+<body>
+    {% block content %}
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-4"></div>
+            <div class="col-sm-4 align">
+                <img src="{% static 'radhakant.jpg'%}" class='mentor-self-image'><br>
+                <h3>Radhakant Kar</h3>
+                <h3>Singer</h3>
+                <h3>karradhakanta8@gmail.com</h3>
+                <p class="textsize">
+                    Myself Radhakanta Kar, a musician, trained in Odissi Vocal Music for 13 years and Hindustani classical music for 2years.
+                    I have knowledge about Music production, studio recording, mixing and mastering. I have around 1k followers in instagram and 600 subscribers in Youtube till now.
+                    I have been doing music since 2003 and I have sound knowledge on Alankaar, Raag etc. My favourite genre in music is sufi and soft romantic.
+                </p>
+            </div>
+        </div>
+    </div>
+    {% endblock content %}
+</body>
+</html>

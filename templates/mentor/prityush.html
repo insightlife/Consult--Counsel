@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+{% extends 'master/base.html'%}
+{% load static%}
+<html lang="en">
+<head></head>
+<body>
+    {% block content %}
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-4"></div>
+            <div class="col-sm-4 align">
+                <img src="{% static 'piyush.jpg'%}" class='mentor-self-image'><br>
+                <h3>Prityush Kumar Sahu</h3>
+                <h3>Environmentalist & Photographer</h3>
+                <h3>prityushsahu96@gmail.com</h3>
+                <p class="textsize">
+                    Hey...!! This is Prityush here... I'm an Environmentalist... I did my post graduation in Environmental Engineering from VNIT Nagpur...
+                    Apart from this I'm a photographer and also a travel planner... I shoot Streets, Nature and Portraits mostly...
+                    I always love to help people with the knowledge I have... You can ask me anything from my domain, I'd love to answer them.
+                </p>
+            </div>
+        </div>
+    </div>
+    {% endblock content %}
+</body>
+</html>

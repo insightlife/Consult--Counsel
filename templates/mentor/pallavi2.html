@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+{% extends 'master/base.html'%}
+{% load static%}
+<html lang="en">
+<head></head>
+<body>
+    {% block content %}
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-4"></div>
+            <div class="col-sm-4 align">
+                <img src="{% static 'pallavi2.jpeg'%}" class='mentor-self-image'><br>
+                <h3>Pallavi</h3>
+                <h3>Professional eloquent</h3>
+                <p class="textsize">
+                    I would like to take the subject of effective communication and work ethics that would help students/ clients to understand the organisational behavior and it would also help them to communicate well.
+                    As per my understanding of myself I am an outgoing individual and I can understand people well so I will make the sessions interactive. Hope this will help them to understand the subject and they will enjoy as well as grasp knowledge.
+                </p>
+            </div>
+        </div>
+    </div>
+    {% endblock content %}
+</body>
+</html>

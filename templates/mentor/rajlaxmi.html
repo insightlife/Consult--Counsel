@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+{% extends 'master/base.html'%}
+{% load static%}
+<html lang="en">
+<head></head>
+<body>
+    {% block content %}
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-4"></div>
+            <div class="col-sm-4 align">
+                <img src="{% static 'Rajlaxmi.jpeg'%}" class='mentor-self-image'><br>
+                <h3>Rajlaxmi</h3>
+                <h3>Servicenow Developer</h3>
+                <p class="textsize">
+                    Consistent commendable performer in the team.
+                    (07/2021 - Present)
+                    Infosys Certified ServiceNow System Administrator
+                    (01/2023)
+                    Wireless 5G Professional. (03/2022)
+                    Software Defined Networking (SDN) Certified (07/2021)
+                </p>
+            </div>
+        </div>
+    </div>
+    {% endblock content %}
+</body>
+</html>

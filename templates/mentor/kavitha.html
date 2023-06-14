@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+{% extends 'master/base.html'%}
+{% load static%}
+<html lang="en">
+<head></head>
+<body>
+    {% block content %}
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-4"></div>
+            <div class="col-sm-4 align">
+                <img src="{% static 'kabita.jpg'%}" class='mentor-self-image'><br>
+                <h3>Kavita Hansdha</h3>
+                <h3>Sketch Artist</h3>
+                <h3>kavitahansdah8@gmail.com</h3>
+                <p class="textsize">
+                    I'm Kavita Hansdah from Visakhapatnam, I'm self taught Sketch Artist working with Graphite and Charcoal mediums..
+                    I can explain you the techniques and methods I used from the beginner level.. I will try to explain whatever I learned till now.. because I'm still exploring and learning and it's a never ending journey..
+                    Feel free to ask any doubt and suggestions you need I'll try to clarify it in the simplest way..
+                </p>
+            </div>
+        </div>
+    </div>
+    {% endblock content %}
+</body>
+</html>

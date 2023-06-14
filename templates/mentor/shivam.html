@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+{% extends 'master/base.html'%}
+{% load static%}
+<html lang="en">
+<head></head>
+<body>
+    {% block content %}
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-4"></div>
+            <div class="col-sm-4 align">
+                <img src="{% static 'shivam.jpeg'%}" class='mentor-self-image'><br>
+                <h3>Shivam</h3>
+                <h3>Software developer at Microsoft</h3>
+                <p class="textsize">
+                    Upcoming software engineer-2 at Microsoft. Previously worked as a software engineer at MathWorks. 
+                    Graduated from NIT Meghalaya with President's Gold Medal in 2019. Plays and follows Badminton, Cricket and Football. In free time, does programming , research projects. 
+                    Also into gymming, yoga, running. Linked In: https://www.linkedin.com/in/shivam2296/
+                </p>
+            </div>
+        </div>
+    </div>
+    {% endblock content %}
+</body>
+</html>

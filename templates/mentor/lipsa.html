@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+{% extends 'master/base.html'%}
+{% load static%}
+<html lang="en">
+<head></head>
+<body>
+    {% block content %}
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-4"></div>
+            <div class="col-sm-4 align">
+                <img src="{% static 'lipsa.jpg'%}" class='mentor-self-image'><br>
+                <h3>Lipsa Nayak</h3>
+                <h3>MBA & Book Reviewer/Blogger</h3>
+                <h3></h3>
+                <p class="textsize">
+                    Hi, I'm Lipsa Nayak; a bookaholic. Recently I converted to XLRI-HRM. If you need any help regarding higher studies or the exams, feel free to drop your questions. It would be a pleasure to help you out.
+                </p>
+            </div>
+        </div>
+    </div>
+    {% endblock content %}
+</body>
+</html>

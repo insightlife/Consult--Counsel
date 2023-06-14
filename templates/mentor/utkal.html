@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+{% extends 'master/base.html'%}
+{% load static%}
+<html lang="en">
+<head></head>
+<body>
+    {% block content %}
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-4"></div>
+            <div class="col-sm-4 align">
+                <img src="{% static 'utkal.jpg'%}" class='mentor-self-image'><br>
+                <h3>Utkal</h3>
+                <h3>Competitive Exams Guide</h3>
+                <p class="textsize">
+                    I am currently working as  Associate Software Developer at ESSPL.
+                    Graduated from VSSUT, Burla.
+                    I can guide people on Quantitative Aptitude and Logical Reasoning to do better in Competitive exams as well as for Company Placements.
+                </p>
+            </div>
+        </div>
+    </div>
+    {% endblock content %}
+</body>
+</html>

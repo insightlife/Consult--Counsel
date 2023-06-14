@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+{% extends 'master/base.html'%}
+{% load static%}
+<html lang="en">
+<head></head>
+<body>
+    {% block content %}
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-4"></div>
+            <div class="col-sm-4 align">
+                <img src="{% static 'jita.jpg'%}" class='mentor-self-image'><br>
+                <h3>Jita raharaj</h3>
+                <h3>MBA(HR) & Associate in CSIR-IMMT</h3>
+                <h3>uh19026@xustudent.edu.in</h3>
+                <p class="textsize">
+                    Currently Pursuing MBA in Human Resource Management at XIMB, Bhubaneswar, with a work experience of around 2 years in the R&D and IT industry, and an under-graduate degree in Metallurgical and Material Science Engineering from VSSUT, Burla.
+                    Work Experience:
+                    Accenture Solutions Private Limited-Application Development Associate
+                    CSIR-IMMT (RRL)- Project Research Associate
+                </p>
+            </div>
+        </div>
+    </div>
+    {% endblock content %}
+</body>
+</html>

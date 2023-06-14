@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+{% extends 'master/base.html'%}
+{% load static%}
+<html lang="en">
+<head></head>
+<body>
+    {% block content %}
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-4"></div>
+            <div class="col-sm-4 align">
+                <img src="{% static 'shuvayu.jpg'%}" class='mentor-self-image'><br>
+                <h3>Shuvayu Goswami</h3>
+                <h3>Anchor and Software Engineer</h3>
+                <h3>shuvayu18@gmail.com</h3>
+                <p class="textsize">
+                    I am Shuvayu, I am from Kolkata, India. An electronics engineer working in a software consulting firm. I love to play cricket, football and tennis. At my leisure I love sketching and singing.
+                    I have been an anchor from my college days and took it to office as well where I anchored many shows.
+                </p>
+            </div>
+        </div>
+    </div>
+    {% endblock content %}
+</body>
+</html>

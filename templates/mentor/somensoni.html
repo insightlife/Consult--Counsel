@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+{% extends 'master/base.html'%}
+{% load static%}
+<html lang="en">
+<head></head>
+<body>
+    {% block content %}
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-4"></div>
+            <div class="col-sm-4 align">
+                <img src="{% static 'somensoni.jpeg'%}" class='mentor-self-image'><br>
+                <h3>Somensoni Behuria</h3>
+                <h3>Oracle Application Developer.</h3>
+                <h3>somensoni.topaz@gmail.com</h3>
+                <p class="textsize">
+                    "Software Developer-
+                    I am an experienced software engineer, with a passion for developing new products. I started my career with Infosys, mostly working on Oracle ERP supply chain modules.
+                    My technical work involves comprehensive knowledge on database and server handling. Having said this, currently I'm a software developer for Dell's industry- leading supply chain, with expertise on Oracle application development and integration tools."
+                </p>
+            </div>
+        </div>
+    </div>
+    {% endblock content %}
+</body>
+</html>

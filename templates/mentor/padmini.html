@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+{% extends 'master/base.html'%}
+{% load static%}
+<html lang="en">
+<head></head>
+<body>
+    {% block content %}
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-4"></div>
+            <div class="col-sm-4 align">
+                <img src="{% static 'padmini.jpeg'%}" class='mentor-self-image'><br>
+                <h3>Padmini Singh</h3>
+                <h3>MBA & Agile Developer</h3>
+                <h3>padminising@gmail.com</h3>
+                <p class="textsize">
+                    Masters in Business Administration and Former Software Developer
+                    I am Padmini Singh. I have worked as a developer in an Agile Project at Infosys for a period of two years. Currently,
+                    I am pursuing MBA in Business Management. If you need any assistance in these domains please feel free to reach out to me.
+                </p>
+            </div>
+        </div>
+    </div>
+    {% endblock content %}
+</body>
+</html>

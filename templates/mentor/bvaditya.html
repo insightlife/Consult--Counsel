@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+{% extends 'master/base.html'%}
+{% load static%}
+<html lang="en">
+<head></head>
+<body>
+    {% block content %}
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-4"></div>
+            <div class="col-sm-4 align">
+                <img src="{% static 'ping.png'%}" class='mentor-self-image'><br>
+                <h3>BV Aditya Varma</h3>
+                <h3>SOC Analyst</h3>
+                <h3>adityav10196@gmail.com</h3>
+                <p class="textsize"></p>
+            </div>
+        </div>
+    </div>
+    {% endblock content %}
+</body>
+</html>

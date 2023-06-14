@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+{% extends 'master/base.html'%}
+{% load static%}
+<html lang="en">
+<head></head>
+<body>
+   {% block content %}
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-4"></div>
+            <div class="col-sm-4 align">
+                <img src="{% static 'soumya.jpg'%}" class='mentor-self-image'><br>
+                <h3>Sushree Soumya</h3>
+                <h3>Masters in Business Administration & Artist</h3>
+                <p class="textsize">
+                    Fascinated with the beauty all around her, she started painting at the age of 3 and never stopped after that. She  likes to try various art mediums, and experiment with different thoughts and ideas.
+                    Nature is her muse, and her brush is her wand. She believes anyone can pick up a brush and paint their world the colour they want.
+                    Currently, she is pursuing her MBA. She is looking forward to building a community where everyone can draw and paint their imagination and develop art as a hobby as well as a stress-burster!
+                </p>
+            </div>
+        </div>
+    </div>
+    {% endblock content %}
+</body>
+</html>

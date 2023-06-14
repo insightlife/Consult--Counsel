@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+{% extends 'master/base.html'%}
+{% load static%}
+<html lang="en">
+<head></head>
+<body>
+    {% block content %}
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-4"></div>
+            <div class="col-sm-4 align">
+                <img src="{% static 'jayshreeg.jpeg'%}" class='mentor-self-image'><br>
+                <h3>G Jayasree</h3>
+                <h3>Fashion designer</h3>
+                <h3>gnshjayasree5@gmail.com</h3>
+                <p class="textsize">
+                    Hey!! I am a fashion designer and pursuing post graduate in fashion management. I have always been associated with colours, art , design and making clothes from a very young age. I feel communicating my thoughts through colours and fabrics speaks stronger than words.
+                    Fashion is one platform which has no defined direction. It's that Direction I go by my ideas and thoughts taking creative shapes. Studying fashion and pursuing a career has so many opportunities and columns to work in. It's not only that glam we see from one side.
+                    A lot of thoughts,hard work, craftsmanship, effort and time goes into it.
+                    I believe it's always right to fit in a space where you belong, only then it makes more sense.
+                </p>
+            </div>
+        </div>
+    </div>
+    {% endblock content %}
+</body>
+</html>

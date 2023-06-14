@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+{% extends 'master/base.html'%}
+{% load static%}
+<html lang="en">
+<head></head>
+<body>
+    {% block content %}
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-4"></div>
+            <div class="col-sm-4 align">
+                <img src="{% static 'jayesh2.jpeg'%}" class='mentor-self-image'><br>
+                <h3>Jayesh Panigrahi</h3>
+                <h3>Management Graduate at IIM Sirmaur.</h3>
+                <h3>jayeshburla@gmail.com</h3>
+                <p class="textsize">
+                    Management Graduate at IIM Sirmaur.
+                    Founding Team Member at Surwahi Social Kanha
+                    Brief Stint with Accenture.
+                    Guest Lecturer at KIIT International School.
+                    Electrical Engineer from VSSUT.
+                    I am interested for the role of career counselling and personal conselling. Please do let me know if anything else is needed from my end
+                </p>
+            </div>
+        </div>
+    </div>
+    {% endblock content %}
+</body>
+</html>

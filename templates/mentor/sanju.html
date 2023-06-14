@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+{% extends 'master/base.html'%}
+{% load static%}
+<html lang="en">
+<head></head>
+<body>
+    {% block content %}
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-4"></div>
+            <div class="col-sm-4 align">
+                <img src="{% static 'sanju.jpg'%}" class="mentor-self-image"><br>
+                <h3>Sanju</h3>
+                <h3>Project & Business Ideas Expert</h3>
+                <p class="textsize">
+                    I would like to be mentoring upon startup business related topics, where one can showcase their talents of good startup plans and with starting with small budgets to enlarging it to bigger scale.
+                    Focusing on the pros and cons of today's generation to future generation.
+                    Experience has taught me that running a startup is hard work and becoming successful could take many years of hard work and experimentation.
+                    So, I'll be glad to resolve all the queries and further more be enthusiastic to help the learner's get on track.
+                </p>
+            </div>
+        </div>
+    </div>
+    {% endblock content %}
+</body>
+</html>

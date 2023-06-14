@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+{% extends 'master/base.html'%}
+{% load static%}
+<html lang="en">
+<head></head>
+<body>
+    {% block content %}
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-4"></div>
+            <div class="col-sm-4">
+                <h3 class="align">CONTACT US:</h3>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-4"></div>
+            <div class="col-sm-4">
+                <h3 class="textsize align">Email:sumanpatra68@gmail.com</h3>
+                <h3 class="textsize align">Mobile:7750048275</h3>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-4"></div>
+            <div class="col-sm-4">
+                <h3 class="align form-heading">Write to us</h3>
+                <form class="form-group" action="supportnext" method="POST">
+                    {% csrf_token %}
+                    <label class="space"><div class="textsize">Name</div></label>
+                    <input type="text" name="name" required class="form-control space">
+                    <label class="space"><div class="textsize">Email</div></label>
+                    <input type="text" name="email" required class="form-control space">
+                    <label class="space"><div class="textsize">Mobile No</div></label>
+                    <input type="text" name="mobile" required class="form-control space">
+                    <label for="role"><div class="textsize">Role</div></label>
+                    <div class="space">
+                        <select name="role" id="role" class="form-control" onchange="myFunction()">
+                            <option value="professional">Professional</option>
+                            <option value="student">Student</option>
+                        <option value="parent">Parent</option>
+                        <option value="teacher">Teacher</option>
+                        </select>
+                    </div>
+                    <div id="showschoolclg">
+                        <label class="space" for="inst"><div class="textsize">Institution</div></label>
+                        <div class="space">
+                            <select name="inst" id="inst" class="form-control">
+                            <option value="">Select role</option>
+                            <option value="school">School</option>
+                            <option value="college">College</option>
+                            </select>
+                        </div>
+                        <label class="space" for="role"><div class="textsize">Name of Institution</div></label>
+                        <input type="text" name="scname" class="form-control space">
+                    </div>
+                    <label class="space" for="qualification"><div class="textsize">Qualification</div></label>
+                    <input type="text" name="qualification" required class="form-control space">
+                    <label class="space"><div class="textsize">Tell your Concern</div></label>
+                    <textarea multiline type="text" name="abouturself" class="form-control space"></textarea>
+                    <button class="btn btn-success space-button">SUBMIT</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script>
+        document.getElementById("showschoolclg").style.display = "none";
+        function myFunction(){
+            var y=document.getElementById("role");
+            console.log(y.value);
+            if(y.value=="student"){
+                document.getElementById("showschoolclg").style.display = "block";
+            }
+            else{
+                document.getElementById("showschoolclg").style.display = "none";
+            }
+        }
+    </script>
+    {% endblock content %}
+</body>
+</html>

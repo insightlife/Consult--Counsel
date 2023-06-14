@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+{% extends 'master/base.html'%}
+{% load static%}
+<html lang="en">
+<head></head>
+<body>
+    {% block content %}
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-4"></div>
+            <div class="col-sm-4 align">
+                <img src="{% static 'saloni.jpg'%}"class='mentor-self-image'><br>
+                <h3>Saloni Dhall</h3>
+                <h3>Article Writer & Blogger</h3>
+                <h3>salonidhall80@gmail.com</h3>
+                <p class="textsize">
+                    Collaborating peacefully with the Indian Educational System , she  has completed her schooling and Intermediate from DAV, Talcher and is a graduate from VSSUT, Burla.
+                    An engineer at Infosys by profession and a writer by passion has scribbled some thoughtful articles as a blogger.
+                    She is an amateur in the game of life, propagating thoughts through words indulged in self-emmissive emotions. As an ardent follower of stories that speak, she tends to reciprocate the same.
+                </p>
+            </div>
+        </div><br>
+    </div>
+    {% endblock content %}
+</body>
+</html>

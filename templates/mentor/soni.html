@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+{% extends 'master/base.html'%}
+{% load static%}
+<html lang="en">
+<head></head>
+<body>
+    {% block content %}
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-4"></div>
+            <div class="col-sm-4 align">
+                <img src="{% static 'soni.jpg'%}" class='mentor-self-image'><br>
+                <h3>Soni Pandey</h3>
+                <h3>Healthcare expert</h3>
+                <h3>sonipandey2799@gmail.com</h3>
+                <p class="textsize">
+                    This is Soni Pandey, graduate in B pharmacy, with  keen interests in research under human anotomy and physiology, epidemiology, disease management, drug development and healthcare management.
+                    Have experience in Clinical research, pharmacovigilance, pharmaceutical industry.
+                    Currently working as a Health associate in Wipro.
+                    Also, a content and research writer under healthcare sectors.
+                    Can provide guidance, in the healthcare stream being subjective, career, psychological as required adaptivly.
+                </p>
+            </div>
+        </div>
+    </div>
+    {% endblock content %}
+</body>
+</html>

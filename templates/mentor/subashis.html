@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+{% extends 'master/base.html'%}
+{% load static%}
+<html lang="en">
+<head></head>
+<body>
+    {% block content %}
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-4"></div>
+            <div class="col-sm-4 align">
+                <img src="{% static 'subashis.jpg'%}" class='mentor-self-image'><br>
+                <h3>Subashis</h3>
+                <h3>UX/UI Designer, Product Designer</h3>
+                <h3>subhsbatabyal@gmail.com</h3>
+                <p class="textsize">
+                    I am working for Mahindra as a UX & UI Designer.  I am the man behind many successful products/websites namely-
+                    1. The widely successful "THAR AUCTION"website
+                    2. The ongoing carandbike festival bonanza offer page etc
+                    Talking about my area of expertise and the topics I would like to help with-
+                    1. Design (Ui)
+                    2. User experience (Ux)
+                    3. Building a portfolio
+                    4. Cracking a job in design industry
+                    5. Shaping an idea to make a successful product.
+                    6. Career guidance in design and different associated fields.
+                    Hope to expand the umbrella in future but for the time being would love to help with these.
+                </p>
+            </div>
+        </div>
+    </div>
+    {% endblock content %}
+</body>
+</html>

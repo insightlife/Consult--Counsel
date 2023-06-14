@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+{% extends 'master/base.html'%}
+{% load static%}
+<html lang="en">
+<head></head>
+<body>
+    {% block content %}
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-4"></div>
+            <div class="col-sm-4 align">
+                <img src="{% static 'ping.png'%}" class='mentor-self-image'><br>
+                <h3>Smita Pani</h3>
+                <h3>Cloud Operations Expert</h3>
+                <h3>sprajnapani07@gmail.com</h3>
+                <p class="textsize">
+                    As a part of the Cloud operations team, I handle the cloud operations for SAP servers and Server admin operations for the on-premise Linux and Windows Application Servers.
+                    In addition to that, we also handle the cloud Operations for the applications which were recently migrated to the cloud(AWS Platform) using basic services such as Ec2, S3, IAM, Autoscaling, Security Groups, Load-balancing, Cloud-watch, SNS, VPC etc hosted across various regions.
+                    I also have the basic knowledge working on the Version control tool i.e. Git and CI/CD tools like Jenkins and will be continuing to extend my knowledge. I have been working for various clients like Airbus, Mondelez, Luxotica ,
+                    which gave me a good experience of handling various types of customers and dealing with SLA timings and escalation process,
+                </p>
+            </div>
+        </div>
+    </div>
+    {% endblock content %}
+</body>
+</html>

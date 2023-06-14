@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+{% extends 'master/base.html'%}
+{% load static%}
+<html lang="en">
+<head></head>
+<body>
+    {% block content %}
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-4"></div>
+            <div class="col-sm-4 align">
+                <img src="{% static 'pooja.jpg'%}" class='mentor-self-image'><br>
+                <h3>Pooja Kotni</h3>
+                <h3>Architect</h3>
+                <p class="textsize">
+                    I am currently pursuing entrepreneurship and have been continuing the same since 3 years. I have accomplished my works on varied kind of projects ranging from small to medium scale including construction, interior and other architectural services and co-founder of a  startup firm “Studio Ayuh”.
+                    I am computer proficient with the ability to use or learn any software needed for the works. I have gained my experiences from some of the reputed firms during my internship tenure and gained practical knowledge during the field works.
+                    Instagram profile of Studio Ayuh :<a> https://instagram.com/studio_ayuh?igshid=1szk5y2k4ws06</a>
+                </p>
+            </div>
+        </div>
+    </div>
+    {% endblock content %}
+</body>
+</html>

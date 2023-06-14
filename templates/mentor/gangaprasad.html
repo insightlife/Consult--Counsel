@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+{% extends 'master/base.html'%}
+{% load static%}
+<html lang="en">
+<head></head>
+<body>
+    {% block content %}
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-4"></div>
+            <div class="col-sm-4 align">
+                <img src="{% static 'gangaprasad.jpg'%}" class='mentor-self-image'><br>
+                <h3>Gangaprasad Chincholkar</h3>
+                <h3>GATE/ESE & Data Analytics Expert</h3>
+                <p class="textsize">
+                    Industrial &Systems Engineering,IIT Kharagpur.
+                    Data Analytics, CAT Syllabus. JEE.
+                    Hobbies-Hockey and Football player, Football follower(Pool fan),Sketching,etc
+                </p>
+            </div>
+        </div>
+    </div>
+    {% endblock content %}
+</body>
+</html>

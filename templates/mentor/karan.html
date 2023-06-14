@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+{% extends 'master/base.html'%}
+{% load static%}
+<html lang="en">
+<head></head>
+<body>
+    {% block content %}
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-4"></div>
+            <div class="col-sm-4 align">
+                <img src="{% static 'karan.jpg'%}" class='mentor-self-image'><br>
+                <h3>Karan  Hansdah</h3>
+                <h3>Teacher,Expertise in competitive exam</h3>
+                <h3>karanhansdah24@gmail.com</h3>
+                <p class="textsize">
+                    Hii,Myself karan,teacher in the field of competitive exam.
+                    "Mera lecture apke hath mei..
+                    Job hai apke sath mei..."
+                    follow my channel "JOB KA NASHA" on Youtube to get more information.
+                </p>
+            </div>
+        </div>
+    </div>
+    {% endblock content %}
+</body>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+{% extends 'master/base.html'%}
+{% load static%}
+<html lang="en">
+<head></head>
+<body>
+    {% block content %}
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-4"></div>
+            <div class="col-sm-4 align">
+                <img src="{% static 'boaz.jpg'%}" class='mentor-self-image'><br>
+                <h3>boaz abishakth</h3>
+                <h3>Master of Science in Industrial Engineering</h3>
+                <h3>abishakth99@gmail.com</h3>
+                <p class="textsize">
+                    I have completed my bachelors in mechanical engineering at Sathyabama University chennai and masters in Industrial engineering at Southern Illinois University Edwardsville. Currently pursuing hyper-mesh testing (CAE- Computer aided Engineering) jobs.
+                    I can help students who are keen in this career and also help them learn about life in the US if they want to pursue studies here
+                </p>
+            </div>
+        </div>
+    </div>
+  {% endblock content %}
+</body>
+</html>

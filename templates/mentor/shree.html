@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+{% extends 'master/base.html'%}
+{% load static%}
+<html lang="en">
+<head></head>
+<body>
+    {% block content %}
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-4"></div>
+            <div class="col-sm-4 align">
+                <img src="{% static 'shree.jpg'%}" class='mentor-self-image'><br>
+                <h3>Shreeparna Nag</h3>
+                <h3>Classical dancer & Software techie</h3>
+                <h3>nag.shreeparna@gmail.com</h3>
+                <p class="textsize">
+                    Shreeparna is a tech graduate currently working in Deloitte for 2 years. She hails from Odisha currently residing in Hyderabad She's is a trained classical dancer, tapping her feet since childhood.
+                    She had been part of National and International performances and competitions.
+                    She's a people's person, always ready to help or counsel in whatever way she can. Please feel free to reach out to her.
+                </p>
+            </div>
+        </div>
+    </div>
+    {% endblock content %}
+</body>
+</html>

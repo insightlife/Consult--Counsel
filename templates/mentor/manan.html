@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+{% extends 'master/base.html'%}
+{% load static%}
+<html lang="en">
+<head></head>
+<body>
+    {% block content %}
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-4"></div>
+            <div class="col-sm-4 align">
+                <img src="{% static 'manan.jpg'%}" class='mentor-self-image'><br>
+                <h3>Manan Agrwal</h3>
+                <h3>Professional Guitarist</h3>
+                <h3>manannagarwal@gmail.com</h3>
+                <p class="textsize">
+                    Hi,I am a professional guitarist and a solo artist writing music based on famous movies/stories lasting around 3-5 minutes. My music takes the listener through a myriad of emotions on the basis of the musical story,
+                    making them experience scenes unfold in front of their eyes.
+                    Link :<a href="https://youtu.be/YNAglkqncos">Youtube channel</a>
+                </p>
+            </div>
+        </div>
+    </div>
+    {% endblock content %}
+</body>
+</html>

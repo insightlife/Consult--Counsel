@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+{% extends 'master/base.html'%}
+{% load static%}
+<html lang="en">
+<head></head>
+<body>
+    {% block content %}
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-4"></div>
+            <div class="col-sm-4 align">
+                <img src="{% static 'nimai.jpg'%}" class='mentor-self-image'><br>
+                <h3>Nimai</h3>
+                <h3>Government exams expert</h3>
+                <p class="textsize">
+                    Hi, This is Nimai- an engineering graduate and an Accenture alumini (SAP BASIS).... Currently, enrolled in Masters in Economics, I am here to help you out with your preparation for the two major fields-
+                    1) IBPS BANKING
+                    2) UPSC CSE (General Studies).
+                    I have been guiding people in past and knows about the obstacles that may come in your way...So join me, to help you overcome with your difficulties in those areas.
+                    Always happy to help an open mind😜
+                </p>
+            </div>
+        </div>
+    </div>
+    {% endblock content %}
+</body>
+</html>

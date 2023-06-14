@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+{% extends 'master/base.html'%}
+{% load static%}
+<html lang="en">
+<head></head>
+<body>
+    {% block content %}
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-4"></div>
+            <div class="col-sm-4 align">
+                <img src="{% static 'juned.jpg'%}" class='mentor-self-image'><br>
+                <h3>Ifrit Juned</h3>
+                <h3>Tech geek</h3>
+                <h3>junedrox786@gmail.com</h3>
+                <p class="textsize">
+                    Systems Engineer in Apple GBI at Infosys Ltd. Readers' pride, writers' envy. Tech geek. Gaming freak. Narcissistic, but, always there to share a coke!
+                </p>
+            </div>
+        </div>
+    </div>
+    {% endblock content %}
+</body>
+</html>

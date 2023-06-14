@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+{% extends 'master/base.html'%}
+{% load static%}
+<html lang="en">
+<head></head>
+<body>
+    {% block content %}
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-4"></div>
+            <div class="col-sm-4 align">
+                <img src="{% static 'srima.jpg'%}" class='mentor-self-image'><br>
+                <h3>Srimaa Barata</h3>
+                <h3>Architect and Model</h3>
+                <p class="textsize">
+                    Srimaa Barata is an Architect by profession and has been a trainee under famous Arcitect Hafiz Contractor.
+                    Apart from the above she has been involved in modelling at Mumbai.
+                    She has title of Mrs Vassaunt under her name and dreams to get crowned some day...
+                </p>
+            </div>
+        </div>
+    </div>
+    {% endblock content %}
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+{% extends 'master/base.html'%}
+{% load static%}
+<html lang="en">
+<head></head>
+<body>
+    {% block content %}
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-4"></div>
+            <div class="col-sm-4 align">
+                <img src="{% static 'Damini.jpg'%}" class='mentor-self-image'><br>
+                <h3>Damini</h3>
+                <h3>Content,Dance, fashion and Lifestyle expert</h3>
+                <p class="textsize">
+                    I am a simple minded girl, with big dreams.
+                    For me life has always been about experimenting and I strongly believe that one is never too old to persue his/her passion.
+                    I always wanted to blog but there were too many hurdles. Finally this pandemic I decided if is time to bring the best out of me.
+                    Hence I started creating contents online.
+                    My insta page is all about fashion, dance and lifestyle.
+                    Through my channel I want to entertain people and bring smile on their face and at the same time make sure my followers are always in Vogue.
+                </p>
+            </div>
+        </div>
+    </div>
+    {% endblock content %}
+</body>
+</html>

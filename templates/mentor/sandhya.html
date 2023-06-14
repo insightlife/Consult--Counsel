@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+{% extends 'master/base.html'%}
+{% load static%}
+<html lang="en">
+<head></head>
+<body>
+    {% block content %}
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-4"></div>
+            <div class="col-sm-4 align">
+                <img src="{% static 'sandhya.jpg'%}" class='mentor-self-image'><br>
+                <h3>Sandhya Sattiraju</h3>
+                <h3>Biotechie, Masters in Biochemistry and Molecular Biology.</h3>
+                <h3>sandhyasattiraju5@gmail.com</h3>
+                <p class="textsize">
+                    Research Assistant III (Present):
+                    Department of Infectious Diseases and Immunology,Cincinnati Children’s Hospital Medical Center,Cincinnati, Ohio, USA
+                    Research Assistant (2019-2020):
+                    Department of Neuroscience, Cell biology and Physiology,Wright State University, USA
+                    Graduate Education:
+                    Master of Science in Biochemistry and Molecular biology (2018-2020),Wright State University, Dayton-OH, USA
+                    Undergraduate Education:
+                    Bachelor of Technology in Biotechnology (2014-2018),GITAM University, Visakhapatnam, A.P., India
+                </p>
+            </div>
+        </div>
+    </div>
+    {% endblock content %}
+</body>
+</html>

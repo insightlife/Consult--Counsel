@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+{% extends 'master/base.html'%}
+{% load static%}
+<html lang="en">
+<head></head>
+<body>
+    {% block content %}
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-4"></div>
+            <div class="col-sm-4 align">
+                <img src="{% static 'ping.png'%}" class='mentor-self-image'><br>
+                <h3>Kavya</h3>
+                <h3>Chemical Engineer</h3>
+                <h3></h3>
+                <p class="textsize">
+                    I am a Chemical Engineer by profession and worked as Assistant Manager in Vedanta Limited-Aluminium
+                    and Power.In the role of a Control Room Engineer,I have experience in the real-time running of the
+                    refinery and management . Further more,I was a part of the Technical Department of the company
+                    where I dealt with monthly production planning,SAP HANA and daily KIP tracking.Apart from this ,I am
+                    an yoga enthusiast and part of a voluntary yoga society.
+                </p>
+            </div>
+        </div>
+    </div>
+    {% endblock content %}
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+{% extends 'master/base.html'%}
+{% load static%}
+<html lang="en">
+<head></head>
+<body>
+    {% block content %}
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-4"></div>
+            <div class="col-sm-4 align">
+                <img src="{% static 'jyoti_.jpg'%}" class='mentor-self-image'><br>
+                <h3>Jyoti Sharma</h3>
+                <h3>Storyteller</h3>
+                <h3>jrs8895@gmail.com</h3>
+                <p class="textsize">
+                    Hi! I am Jyoti!
+                    An Engineer by chance and A Storyteller by choice.
+                    Everybody has a story to tell, so do I.
+                    I makeup stories and love narrating them.
+                    I believe in making people more expressive with their words and interactive with others.
+                    If someday you would find me uttering somewhere in front of a dog or a cat or even a bird, listen deeply they would be expressing me their stories.
+                </p>
+            </div>
+        </div>
+    </div>
+    {% endblock content %}
+</body>
+</html>

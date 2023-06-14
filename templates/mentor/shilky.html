@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+{% extends 'master/base.html'%}
+{% load static%}
+<html lang="en">
+<head></head>
+<body>
+    {% block content %}
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-4"></div>
+            <div class="col-sm-4 align">
+                <img src="{% static 'shilky.jpg'%}" class='mentor-self-image'><br>
+                <h3>Shilky</h3>
+                <h3>MBA Student and Insta blogger</h3>
+                <p class="textsize">
+                    Completed B.Tech CSE in 2018.
+                    Then worked in IT with Infosys for 2 yrs(testing domain for an American multinational tech company)
+                    Then worked in Whitehat Jr as coding Instructor for 3 months
+                    Currently, preparing for MBA
+                    ( Gave competitive exams like CAT, SNAP, XAT, MICAT, TISSNET and scored 94 percentile in CAT, 93 in SNAP and cleared MICAT too)
+                    An MBA aspirant who loves travelling and creating content..
+                    Socially active and loves interacting with people...
+                </p>
+            </div>
+        </div>
+    </div>
+    {% endblock content %}
+</body>
+</html>

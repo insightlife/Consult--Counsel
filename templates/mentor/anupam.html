@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+{% extends 'master/base.html'%}
+{% load static%}
+<html lang="en">
+<head></head>
+<body>
+    {% block content %}
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-4"></div>
+            <div class="col-sm-4 align">
+                <img src="{% static  'anupam.jpg'%}" class='mentor-self-image'><br>
+                <h3>Anupam Panda</h3>
+                <h3>Sound Engineer, Music Producer & Drummer</h3>
+                <h3>anupamp67@gmail.com</h3>
+                <p class="textsize">
+                    Hello , i am Anupam Panda , a Drummer turned Sound Engineer and Music Producer ,
+                    i started my career as a Drummer/Drums Teacher playing with bands of different genres and teaching at 2 places including my own school Harmony School of Music ,
+                    its been 9 years i have been teaching and mentoring to students of different age groups ranging from 5 to 60 years ,
+                    Till date i have played with more than 20 bands , played Drums for more than 150 tracks As well as i have taught drums to more than 100 students at places all over india ,
+                    I did my Sound Engineering degree from Seamedu School of Pro-Expressionism , Pune , which further enabled me to explore my field by taking part in
+                    Live sound setups of bands , performing live multitrack recordings , producing music , composing songs etc , its been a really wonderful journey of learning , teaching , performing and making music , and
+                    i look forward to guide you through this beautiful path.
+                </p>
+            </div>
+        </div>
+    </div>
+    {% endblock content %}
+</body>
+</html>

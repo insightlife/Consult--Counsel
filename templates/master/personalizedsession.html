@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+{% extends 'master/base.html'%}
+{%load static%}
+<html lang="en">
+<head></head>
+<body>
+    {% block content %}
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-2"></div>
+            <div class="col-md-4">
+                <h3 class="align section-heading">Placement Support</h3>
+                <img src="{% static 'placement.jpg'%}" class="section-img">
+                <p  class="textsize">placement support refers to the assistance provided to job seekers in finding and securing employment. This can include help with resume writing, interview preparation, job search strategies, and other related services.
+                    Our industry experts help students to be placed by doing screening, referring, guiding and many more things.
+                </p>
+                <div class="align"><a href="placementsupportform"><button class="btn btn-dark space-button">BOOK YOUR SEAT</button></a></div>
+            </div>
+            <div class="col-md-4">
+                <h3 class="align section-heading">Job Support</h3>
+                <img src="{% static 'jobsupport.jpg'%}" class="section-img">
+                <p  class="textsize"> job support refers to the assistance provided to employees in performing their job duties. This can include training, coaching, mentoring, and other related services.
+                    Our industry experts help Professionals in their jobs by guiding and assisting them.
+                </p>
+                <div class="align"><a href="jobsupportform"><button class="btn btn-dark space-button">BOOK YOUR SEAT</button></a></div>
+            </div>
+        </div>
+    </div>
+    {% endblock content %}
+</body>
+</html>

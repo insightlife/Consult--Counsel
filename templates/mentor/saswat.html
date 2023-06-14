@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+{% extends 'master/base.html'%}
+{% load static%}
+<html lang="en">
+<head></head>
+<body>
+    {% block content %}
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-4"></div>
+            <div class="col-sm-4 align">
+                <img src="{% static 'saswat.jpg'%}" class='mentor-self-image'><br>
+                <h3>Saswat Kumar Parida</h3>
+                <h3>Career and Business Management Expert</h3>
+                <h3>um20111@stu.ximb.ac.in</h3>
+                <p class="textsize">
+                    Having worked earlier in a Direct Selling Organization as a "Business Associate" (part-time) during my graduation and in my own Startup "Archify & Buildify Constructions Pvt. LTD. " after graduation,
+                    I realized that there are more things I want to explore and nail, specially in the fields of Management, business, marketing and strategy.
+                    This paved my way towards Xavier Institute of Management, Bhubaneswar as a MBA grad.
+                    Throughout my journey I have seen people getting confused about a career in Management and Business , because of the pre notions that they need talent and skills to nail it.
+                    My goal is to guide them breaking the status-quo and help them explore the unexplored.
+                </p>
+            </div>
+        </div>
+    </div>
+    {% endblock content %}
+</body>
+</html>

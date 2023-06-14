@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+{% extends 'master/base.html'%}
+{% load static%}
+<html lang="en">
+<head></head>
+<body>
+    {% block content %}
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-4"></div>
+            <div class="col-sm-4">
+                <h3 class="align form-heading">Fill the Form</h3>
+                <form class="form-group" action="jobsupportform" method="POST">
+                    {% csrf_token %}
+                    <label class="space"><div class="textsize">Name</div></label>
+                    <input type="text" name="name" required class="form-control space">
+                    <label class="space"><div class="textsize">Email</div></label>
+                    <input type="text" name="email" required class="form-control space">
+                    <label class="space"><div class="textsize">Mobile No</div></label>
+                    <input type="text" name="mobile" required class="form-control space">
+                    <label class="space" for="role"><div class="textsize">Name of Company</div></label>
+                    <input type="text" name="scname" class="form-control space">
+                    <label class="space" for="qualification"><div class="textsize">Qualification</div></label>
+                    <input type="text" name="qualification" required class="form-control space">
+                    <label class="space"><div class="textsize">Concern</div></label>
+                    <input type="text" name="abouturself" class="form-control space"></textarea>
+                    <button class="btn btn-success space-button">SUBMIT</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script>
+        document.getElementById("showschoolclg").style.display = "none";
+        function myFunction(){
+            var y=document.getElementById("role");
+            console.log(y.value);
+            if(y.value=="student"){
+                document.getElementById("showschoolclg").style.display = "block";
+            }
+            else{
+                document.getElementById("showschoolclg").style.display = "none";
+            }
+        }
+    </script>
+    {% endblock content %}
+</body>
+</html>

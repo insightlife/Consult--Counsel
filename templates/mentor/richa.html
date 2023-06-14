@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+{% extends 'master/base.html'%}
+{% load static%}
+<html lang="en">
+<head></head>
+<body>
+    {% block content %}
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-4"></div>
+            <div class="col-sm-4 align">
+                <img src="{% static 'richa.jpg'%}" class='mentor-self-image'><br>
+                <h3>Richa Bihari</h3>
+                <h3>Masters in Architecture & Home Baker</h3>
+                <p class="textsize">
+                    I’m Richa Bihari. I graduated in 2019 with a Bachelors in Architecture from VSSUT, Burla.
+                    Currently, I am pursuing my Masters in Architecture (Architectural history and theory) from CEPT University, Ahmedabad.
+                    I am also a home baker, travel enthusiast, nature lover and a book freak.
+                </p>
+            </div>
+        </div>
+    </div>
+    {% endblock content %}
+</body>
+</html>

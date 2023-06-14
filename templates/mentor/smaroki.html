@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+{% extends 'master/base.html'%}
+{% load static%}
+<html lang="en">
+<head></head>
+<body>
+    {% block content %}
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-4"></div>
+            <div class="col-sm-4 align">
+                <img src="{% static 'smaroki.jpg'%}" class='mentor-self-image'><br>
+                <h3>Smaroki Smruti Rekha</h3>
+                <h3>Singer & Dancer</h3>
+                <p class="textsize">
+                    I am Smaroki Smruti Rekha. I am a 12 grade passout and NEET 2021 aspirant. Beside that, I run my instagram account where i try to upload activities such as dance and song covers and paintings.
+                </p>
+            </div>
+        </div>
+    </div>
+    {% endblock content %}
+</body>
+</html>

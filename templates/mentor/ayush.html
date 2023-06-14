@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+{% extends 'master/base.html'%}
+{% load static%}
+<html lang="en">
+<head></head>
+<body>
+    {% block content %}
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-4"></div>
+            <div class="col-sm-4 align">
+                <img src="{% static 'ayush.jpg'%}" class='mentor-self-image'><br>
+                <h3>Ayush Raj</h3>
+                <h3>Actor & Beatboxer</h3>
+                <h3>ayushbabul2001@gmail.com</h3>
+                <p class="textsize">
+                    I have been acting since last 8 years and now I'm a member of the dramatics club of VSSUT and I'm the asst coordinator of the dramatics society as well.
+                    Currently I have started a YouTube channel in the name Pi RANK , where I shoot pranks and funny videos.
+                </p>
+            </div>
+        </div>
+    </div>
+    {% endblock content %}
+</body>
+</html>

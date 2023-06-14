@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+{% extends 'master/base.html'%}
+{% load static%}
+<html lang="en">
+<head></head>
+<body>
+    {% block content %}
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-4"></div>
+            <div class="col-sm-4 align">
+                <img src="{% static 'indu.jpg'%}" class='mentor-self-image'><br>
+                <h3>Indu</h3>
+                <h3>Test engineer at Wipro</h3>
+                <p class="textsize">
+                    i am indu i have completed my education from KV Foundation and my 11th and 12th from narayana i was a bit weak at maths not too good and after coming to 10th one of my teacher helped me to develop interest
+                    in mathematics i went in the same path which helped me to develop my career towards software side and i completed my education from raghu engineering college and my communication skills and problem solving skills
+                    which i could developed in KV Foundation made me stand like software engineer in wipro today.
+                </p>
+            </div>
+        </div>
+    </div>
+    {% endblock content %}
+</body>
+</html>

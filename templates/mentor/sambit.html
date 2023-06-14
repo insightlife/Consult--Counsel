@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+{% extends 'master/base.html'%}
+{% load static%}
+<html lang="en">
+<head></head>
+<body>
+    {% block content %}
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-4"></div>
+            <div class="col-sm-4 align">
+                <img src="{% static 'sambit.jpg'%}" class='mentor-self-image'><br>
+                <h3>Sambit patra</h3>
+                <h3>Assistant manager at Zindal</h3>
+                <h3>imsambit45@gmail.com</h3>
+                <p class="textsize">
+                    I am currently working as an Assistant manager at Jindal steel and power limited in the dept of electrical maintenance.my work scope includes maintenance Transformers, Motors,switch gears, leading a team of technicians, procurement of spares,
+                    developing work scope for contracted projects and managing inventory of consumables, spare parts.I am a part of the project team of my unit.
+                </p>
+            </div>
+        </div>
+    </div>
+    {% endblock content %}
+</body>
+</html>

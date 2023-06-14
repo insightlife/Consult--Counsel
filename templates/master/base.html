@@ -1,0 +1,105 @@
+{%load static%}
+<html lang="en">
+<head>
+  
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="suman">
+    <meta name="keywords" content="teaching and guidance,counselling,therapist near me,counsellor near me,psychotherapist,couples therapy near me,
+    mental health counselor,relationship counselling,substance abuse counselor,sex counsellor,couples counselling,Software training near me,how to find" >
+    <meta name="description" content="consult and counsel bring you the best consulting and counselling services in the field of Dance,Music,Art,Paint,Sketch,Education,Teaching,Health,Corporate,Writtings and many more">
+    <meta name="description" content="We bring you the best consulting and counselling services irrespective of field with the help of renowned professionals in that particular concerned area">
+    <link rel="stylesheet" href="static/style.css">
+    <link rel="stylesheet" href="{% static 'master.css' %}">
+    <link rel="stylesheet" href="{% static 'basic.css' %}">
+    <link rel="icon" href="{% static 'COUNC.jpeg' %}">
+    <link rel="stylesheet" href="{% static 'bootstrap.css' %}">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Consult&Counsel</title>
+</head>
+<body>
+    <section id="header">
+        <div class="menu-bar">
+        <nav class="navbar navbar-expand-lg navbar-light">
+          <a class="navbar-brand" href="/"><img src="static/job-logo-white.jpeg"></a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item">
+                <a class="nav-link plz" href="services">SERVICES</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link plz" href="mentors">MENTORS</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link plz" href="login">ACCOUNT</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link dropdown">
+                <button class="dropbtn" onclick="myFunctions()">ABOUT</button>
+                </a>
+                <div class="dropdown-content" id="myDropdown">
+                  <a href="about">About us</a>
+                  <a href="testimony">Testimony</a>
+                  <a href="FAQ">FAQ</a>
+                  <a href="donation">Donation</a>
+                </div>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link plz" href="support">CONTACT</a>
+              </li>
+            </ul>
+          </div>
+        </nav>    
+        </div>
+        <hr>
+        {% block content%}
+        {% endblock content%}   
+        <hr>
+        <section id="footer" class="text-center">
+            <p>Subscribe our <a href="https://youtube.com/@consultcounsel6522">youtube channel</a> to watch videos on how to get help.<br> Press the bell icon to get notification of new video</p>
+            <a href="https://www.instagram.com/consultandcounsel/"><img src="static/instagram.svg"></a>
+            <a href="https://m.facebook.com/consultandcounsel"><img src="static/facebook-icon.png"></a>
+            <a href="https://www.linkedin.com/company/consultandcounsel"><img src="static/linkedin-icon.png"></a>
+            <hr>
+            <p>Made With <i class="fa fa-heart"></i> by <a href="">VSSUT Almuni</a></p>
+        </section>
+        </body>
+        </html>
+        <script>
+          document.getElementById("showschoolclg").style.display = "none";
+        function myFunction(){
+            var y=document.getElementById("role");
+            console.log(y.value);
+            if(y.value=="student"){
+                document.getElementById("showschoolclg").style.display = "block";
+            }
+            else{
+                document.getElementById("showschoolclg").style.display = "none";
+            }
+        }
+          /* When the user clicks on the button, 
+          toggle between hiding and showing the dropdown content */
+          function myFunctions() {
+            console.log("clicked");
+            document.getElementById("myDropdown").classList.toggle("show");
+          }
+          
+          // Close the dropdown if the user clicks outside of it
+          window.onclick = function(e) {
+            if (!e.target.matches('.dropbtn')) {
+            var myDropdown = document.getElementById("myDropdown");
+              if (myDropdown.classList.contains('show')) {
+                myDropdown.classList.remove('show');
+              }
+            }
+          }
+          </script>
+        </body>
+    </html>

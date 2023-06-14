@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+{% extends 'master/base.html'%}
+{% load static%}
+<html lang="en">
+<head></head>
+<body>
+    {% block content %}
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-4"></div>
+            <div class="col-sm-4 align">
+                <img src="{% static 'pechetti.jpg'%}" class='mentor-self-image'><br>
+                <h3>Sri valli P</h3>
+                <h3>Agricultural Expert</h3>
+                <h3>pechettisrivalli98@gmail.com</h3>
+                <p class="textsize">
+                    Agriculture bsc Hons
+                    Student at " Rural Agriculture work experience Programme " under Rural entrepreneurship awareness development yojana by ICAR .
+                    Can approach me for any suggestions regarding biology line after 12th...Am a plant doctor though.
+                </p>
+            </div>
+        </div>
+    </div>
+    {% endblock content %}
+</body>
+</html>

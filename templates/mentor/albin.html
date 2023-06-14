@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+{% extends 'master/base.html'%}
+{% load static%}
+<html lang="en">
+<head></head>
+<body>
+    {% block content %}
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-4"></div>
+            <div class="col-sm-4 align">
+                <img src="{% static 'albin.jpg'%}" class='mentor-self-image'><br>
+                <h3>Albin Vayattattil</h3>
+                <h3>Master in civil engineering</h3>
+                <h3>albinvayattattil037@gmail.com</h3>
+                <p class="textsize">
+                    GATE 2020 qualified with AIR 2977
+                    First,`energy efficient dream home’,hub level organized by IEEE and Energy management Centre,Kerala
+                    Runner up,’cadd master’ of national level technical event ‘abhiyanthriki’ by Rajagiri school of engineering and technology,2017
+                </p>
+            </div>
+        </div>
+    </div>
+  {% endblock content %}
+</body>
+</html>

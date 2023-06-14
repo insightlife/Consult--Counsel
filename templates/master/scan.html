@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+{% extends 'master/base.html'%}
+{% load static%}
+<html lang="en">
+<head></head>
+<body>
+    {% block content %}
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-4"></div>
+            <div class="col-sm-4">
+                <h4 class="align">SCAN THIS QR TO PAY DIRECTLY</h4>
+                <img src="{% static 'paytm.jpg'%}" ><br>
+            </div>
+        </div>
+    </div>
+    {% endblock content %}
+</body>
+</html>

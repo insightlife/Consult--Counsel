@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+{% extends 'master/base.html'%}
+{% load static%}
+<html lang="en">
+<head></head>
+<body>
+    {% block content %}
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-4"></div>
+            <div class="col-sm-4 align">
+                <img src="{% static 'amal.jpg'%}" class='mentor-self-image'><br>
+                <h3>Amal</h3>
+                <h3>Integration Analyst & Academic Counsellor</h3>
+                <h3>amal.ankem95@gmail.com</h3>
+                <p class="textsize">
+                    This is Amal. I am a Computer Science graduate (Bachelor's degree from GITAM University, Visakhapatnam and Master's degree from Western Michigan University)
+                    currently working as an Integration Analyst at MiHIN, a Health IT company. I currently live in the U.S. I am working towards becoming an AWS Certified Professional.
+                    Apart from this I love traveling, cooking, watch a lot of movies. Growing up, I did not have a mentor/guide to show me different career options or abroad education.
+                    Through this platform, i hope i can help atleast some of you. Feel free to reach out regarding abroad education, career guidance, academic guidance. Looking forward to help you.
+                </p>
+            </div>
+        </div>
+    </div>
+  {% endblock content %}
+</body>
+</html>

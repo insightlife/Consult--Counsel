@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+{% extends 'master/base.html'%}
+{% load static%}
+<html lang="en">
+<head></head>
+<body>
+    {% block content %}
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-4"></div>
+            <div class="col-sm-4 align">
+                <img src="{% static 'manoranjan.jpg'%}" class='mentor-self-image'><br>
+                <h3>Manoranjan</h3>
+                <h3>Counsellor and Guide</h3>
+                <h3></h3>
+                <p class="textsize">
+                    Hi, Manoranjan here, current working as a manager. I love to help people who need support and guidance
+                    in the field of problems related to life. 
+                    If you need any help regrading your life problems, feel free to drop your questions. 
+                    It would be a pleasure to help you out.
+                </p>
+            </div>
+        </div>
+    </div>
+    {% endblock content %}
+</body>
+</html>

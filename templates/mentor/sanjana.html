@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+{% extends 'master/base.html'%}
+{% load static%}
+<html lang="en">
+<head></head>
+<body>
+    {% block content %}
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-4"></div>
+            <div class="col-sm-4 align">
+                <img src="{% static 'ping.png'%}" class='mentor-self-image'><br>
+                <h3>Sanjana Ogirala</h3>
+                <h3>Brand Marketing Expert</h3>
+                <p class="textsize">
+                    A passionate marketer who takes brand stories to the masses.
+                    In my current role with Wipro’s Consumer Business division, I’m working on building health & wellness products for the new age consumer.
+                    Prior to this, I’ve done my Master’s in Business Administration from IIM Bangalore and interned with Mahindra Group on their diversity strategies.
+                    I would love to mentor marketing enthusiasts in Marketing, GD/PI preparation and CV building.
+                </p>
+            </div>
+        </div>
+    </div>
+    {% endblock content %}
+</body>
+</html>

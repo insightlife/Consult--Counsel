@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+{% extends 'master/base.html'%}
+{% load static%}
+<html lang="en">
+<head></head>
+<body>
+    {% block content %}
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-4"></div>
+            <div class="col-sm-4 align">
+                <img src="{% static 'ppriyanka.png'%}" class='mentor-self-image'><br>
+                <h3>Priyanka</h3>
+                <h3>Calligrapher, Writer & Poetess</h3>
+            </div>
+        </div>
+    </div>
+    {% endblock content %}
+</body>
+</html>

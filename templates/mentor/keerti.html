@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+{% extends 'master/base.html'%}
+{% load static%}
+<html lang="en">
+<head></head>
+<body>
+    {% block content %}
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-4"></div>
+            <div class="col-sm-4 align">
+                <img src="{% static 'keerti.jpeg'%}" class='mentor-self-image'><br>
+                <h3>Keerti</h3>
+                <h3>Test Analyst</h3>
+                <p class="textsize">
+                    I am currently pursuing information systems business analysis course at George Brown College, Toronto. I have 3.5+ years of past work experience as QA test analyst at Infosys one of the top MNCs’ in India. 
+                    During this past work experience I became proficient in several topics like agile workflow, software test life cycle, DevOps, Jira, ALM and other testing tools. 
+                    In my current course my strongest skills are Critical thinking, Analytical thinking,Information systems PERT and CPM in project management.
+                    I am grateful for this opportunity to introduce myself. Thank you
+                </p>
+            </div>
+        </div>
+    </div>
+    {% endblock content %}
+</body>
+</html>

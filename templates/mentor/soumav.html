@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+{% extends 'master/base.html'%}
+{% load static%}
+<html lang="en">
+<head></head>
+<body>
+    {% block content %}
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-4"></div>
+            <div class="col-sm-4 align">
+                <img src="{% static 'soumav.jpg'%}" class='mentor-self-image'><br>
+                <h3>Soumav Prakash</h3>
+                <h3>Data Engineer & Product Integration</h3>
+                <h3>prakashsoumav@gmail.com</h3>
+                <p class="textsize">
+                    Associate Software Engineer- Accenture:
+                    I started with Accenture in May 2017, where I had responsibility of automating tests through selenium! Meanwhile, i started work on building ETL pipelines alongside the usual work. Then, got the opportunity to work on spark and Hadoop based applications for the rest of my stint!
+                    Product Integrations-Happay:
+                    In January, 2019, I joined Happay(Travel & Expense Management Product) where i took care of all the Product Integrations. These basically were revolved around  building data pipelines for the expense and travel data.Along with that, i also helped in Product features and implementation.The role also got me exposure to clients and involved travel as well!
+                    Data Engineer-Quaero:
+                    I joined Quaero(a US based Marketing company) in July , 2020. We have a Marketing Product known as CDP. The role here is to build scalable data pipelines based on Spark and Hadoop Architecture in order to support the Marketing data platform. I also take care of the Airflow infrastructure here. along with the above tasks,
+                    I carry out POCs for new features and accordingly testing the performance. The tech stack i work on here involves Python, Scala,Java, Spark,Hadoop,Hive, SQL server, Airflow,Docker, Kubernetes.
+                </p>
+            </div>
+        </div>
+    </div>
+    {% endblock content %}
+</body>
+</html>

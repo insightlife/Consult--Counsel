@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+{% extends 'master/base.html'%}
+{% load static%}
+<html lang="en">
+<head></head>
+<body>
+    {% block content %}
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-4"></div>
+            <div class="col-sm-4 align">
+                <img src="{% static 'shashank.jpg'%}" class='mentor-self-image'><br>
+                <h3>Shashank Puranik</h3>
+                <h3>Classical flute player</h3>
+                <h3>puranik.shashank01@gmail.com</h3>
+                <p class="textsize">
+                    Hello! I'm Shashank Puranik. I'm a post-graduate student in Engineering at King's College London. I completed my bachelor's degree in Mechanical Engineering from R.N.S Institute of Technology, Bangalore.
+                    I have been trained in the South Indian classical tradition of playing the bamboo flute. I started my training at the age of seven. I had the privilege to start learning under one of the renowned flautists in Karnataka and continued advanced training under my gurus Sikkil Mala Chandrasekhar and Padmasri A. Kanyakumari.
+                    My accomplishments in this area can be attested by the bestowal of the national scholarship conferred to young artists by the Ministry of Culture, India. I am also a recognised, graded artist of All India Radio, Prasara Bharati, Ministry of Information and Broadcasting, Government of India.
+                    My association with this beautiful instrument spans over a decade and has imparted more than just the skill in playing it.
+                    Along with the comfort it brings me, it continues to teach me certain critical skills that are necessary from an academic point of view as well.
+                    With the blessing of my Gurus, I've performed in many prestigious sabhas and venues across South India.
+                </p>
+            </div>
+        </div>
+    </div>
+    {% endblock content %}
+</body>
+</html>

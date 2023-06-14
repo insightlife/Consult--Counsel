@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+{% extends 'master/base.html'%}
+{% load static%}
+<html lang="en">
+<head></head>
+<body>
+    {% block content %}
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-4"></div>
+            <div class="col-sm-4 align">
+                <img src="{% static 'rudra.jpg'%}" class='mentor-self-image'><br>
+                <h3>Rudra Prasad Maharana</h3>
+                <h3>Choreographer in Hip-hop & Locking </h3>
+                <h3>rspt194@gmail.com</h3>
+                <p class="textsize">
+                    I have started dancing back in 2017 while doing my B.tech. I have trained myself in Hip hop and locking dance styles. lead my crew as a choreographer back in 2019 in Shuffle in  springfest iit kgp bagging runners. also represented with my crew thje next year in shuffles bagging 3rd position. I have experimented different styles on myself and still learning.
+                </p>
+            </div>
+        </div>
+    </div>
+    {% endblock content %}
+</body>
+</html>
+

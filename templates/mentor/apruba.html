@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+{% extends 'master/base.html'%}
+{% load static%}
+<html lang="en">
+<head></head>
+<body>
+    {% block content %}
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-4"></div>
+            <div class="col-sm-4 align">
+                <img src="{% static 'apruba.jpg'%}" class='mentor-self-image'><br>
+                <h3>Apruba</h3>
+                <h3>Social media & Food Blogger</h3>
+                <p class="textsize">
+                    A little background on my life through FOOD. More than just something to nourish your body, food can foster the perfect environment for memories and special times!
+                    Before diving deep into food writing, or even content writing, I was a voracious reader. My nose would always be buried in a book & it gave me immense pleasure. If reading could, why couldn't writing? Thus my journey of a writer began!
+                    I have ghost-written for TOI, Amazon, Snapdeal, Tata and so many other brand. Soon after, I decided to take up academic & business writing and I ended up having a certification from UCI Davis, California.
+                    When I'm not writing or consulting on Digital marketing, I spend most of her time reading, curating recipes, traveling the world.
+                </p>
+            </div>
+        </div>
+    </div>
+  {% endblock content %}
+</body>
+</html>

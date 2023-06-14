@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+{% extends 'master/base.html'%}
+{% load static%}
+<html lang="en">
+<head></head>
+<body>
+    {% block content %}
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-4"></div>
+            <div class="col-sm-4 align">
+                <img src="{% static 'ping.png'%}" class='mentor-self-image'><br>
+                <h3>Vishwanath  Shivraj Rautrao</h3>
+                <h3>Marketing Specialist and Professor</h3>
+                <h3>mrvish93@gmail.com</h3>
+            </div>
+        </div>
+    </div>
+    {% endblock content %}
+</body>
+</html>

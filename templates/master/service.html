@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+{% extends 'master/base.html'%}
+{% load static%}
+<html lang="en">
+<head></head>
+<body>
+    {% block content %}
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-1"></div>
+            <div class="col-sm-2 align margin-service">
+                <img src="static/discuss.jpg" height="200px" width="240px"><br>
+                <a href="session"><button class="btn btn-primary" title="Connect with mentor and talk about your problems">Book 1 to 1 Session</button>
+            </div>
+            <div class="col-sm-2 align">
+                <img src="static/courses.jpg" height="200px" width="240px"><br>
+                <a href="startnow"><button class="btn btn-primary" title="Courses we provide to boost your career">Courses</button></a>
+            </div>
+            <div class="col-sm-2 align">
+                <img src="static/itsolution.jpg" height="200px" width="240px"><br>
+                <a href="itsolution"><button class="btn btn-primary" title="Connect with us to build app and website">IT Solutions</button></a>
+            </div>
+            <div class="col-sm-2 align">
+                <img src="static/project.jpg" height="200px" width="240px"><br>
+                <a href="project"><button class="btn btn-primary" title="Hire mentor from our community">Project</button></a>
+            </div>
+            <div class="col-sm-2 align">
+                <img src="static/personalized.jpg" height="200px" width="240px"><br>
+                <a href="Personalizedsession"><button class="btn btn-primary" title="Hire mentor from our community">Personalized Session</button></a>
+            </div>
+            <div class="col-sm-1"></div>
+            </div>
+        </div>
+    </div>
+    {% endblock content %}
+</body>
+</html>

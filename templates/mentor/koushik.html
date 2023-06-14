@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+{% extends 'master/base.html'%}
+{% load static%}
+<html lang="en">
+<head></head>
+<body>
+    {% block content %}
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-4"></div>
+            <div class="col-sm-4 align">
+                <img src="{% static 'neela2.jpeg'%}" class='mentor-self-image'><br>
+                <h3>Neelaantam Koushik</h3>
+                <h3>Sport expert</h3>
+                <h3>koushikneelakantam@gmail.com</h3>
+                <p class="textsize">
+                    This is a small town guy who just loves to spend his life playing all kinds of sports especially Cricket, which is my first love.
+                    I would like to motivate the next gen kids in whichever way possible to take up outdoor physical sports.
+                    I was playing some sport or other wherever I am. I was the school cricket team captain, captained my College Volleyball team in my Undergrad, was a part of Infosys MySore DC volleyball team and currently playing for the Infosys Hyderabad cricket team.
+                    I love to take care of my body as it helps me in performing well in the games I play.
+                </p>
+            </div>
+        </div>
+    </div>
+    {% endblock content %}
+</body>
+</html>

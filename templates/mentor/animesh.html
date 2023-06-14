@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+{% extends 'master/base.html'%}
+{% load static%}
+<html lang="en">
+<head></head>
+<body>
+    {% block content %}
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-4"></div>
+            <div class="col-sm-4 align">
+                <img src="{% static 'animesh.png'%}" class='mentor-self-image'><br>
+                <h3>Animesh Dash</h3>
+                <h3>M Arch, Singer & Poet</h3>
+                <h3>animesh.dash97@gmail.com</h3>
+                <p class="textsize">
+                    Hey, its Animesh this side. Presently I am pursuing my master's degree
+                    in Transportation and Infrastructure Planning from School of Planning
+                    and Architecture, Vijayawada. My hobbies are singing, writing poems
+                    and photography. I have been managing a page on Instagram named
+                    untamed_hobbies where I upload my works. Although I am not a
+                    professional, but I will be glad to share my ideas regarding the same
+                    with anyone who is interested and also looking forward to learning
+                    from them as well.
+                </p>
+            </div>
+        </div>
+    </div>
+    {% endblock content %}
+</body>
+</html>

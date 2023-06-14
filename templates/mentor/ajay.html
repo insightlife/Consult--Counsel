@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+{% extends 'master/base.html'%}
+{% load static%}
+<html lang="en">
+<head></head>
+<body>
+    {% block content %}
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-4"></div>
+            <div class="col-sm-4 align">
+                <img src="{% static 'ajay.jpg'%}" class='mentor-self-image'><br>
+                <h3>Ajay</h3>
+                <h3>Fitness Trainer & Chess player</h3>
+                <h3>sanivadaajay@gmail.com</h3>
+                <p class="textsize">
+                    I am currently working as system engineer at infosys. I am also experienced in Fitness and Nutrition
+                    Represented the Amrita university in ALL Indian inter-University was part of chess team for 4 years at Amrita University
+                    Reach all your fitness goals  Get personalized diet and workout plans
+                    Improve your chess skills  Transform yourself both physical and mental through fitness by consulting me.
+                </p>
+            </div>
+        </div>
+    </div>
+    {% endblock content %}
+</body>
+</html>

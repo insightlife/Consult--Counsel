@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+{% extends 'master/base.html'%}
+{% load static%}
+<html lang="en">
+<head></head>
+<body>
+    {% block content %}
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-4"></div>
+            <div class="col-sm-4 align">
+                <img src="{% static 'bhartendu.jpg'%}" class='mentor-self-image'><br>
+                <h3>Bharatendu Panda</h3>
+                <h3>Digital Art Maker</h3>
+                <h3>bharatendupanda@gmail.com</h3>
+                <p class="textsize">
+                    I have been drawing since I was 4 years old. Previously I was on drawing with my pencil colours and markers.
+                    For the past 3 years, I have been drawing digitally. I have used multiple tools, hardwares and softwares for drawing.
+                    I have used a wacom digital tablet and currently using Android tablets.
+                    I have working knowledge in Photoshop and multiple drawing tools such as Krita and Autodesk Sketchbook.
+                    I have a YouTube channel for Art that I have started recently and my Instagram contains almost 300 of my artworks.
+                    My field of expertise includes digital art, pencil colours, markers and ink pens. I have been fortunate to win multiple awards for my drawings and creativity though out my life.
+                    I can guide you with basics of drawing and cartooning and how you can easily approach digital art.
+                </p>
+            </div>
+        </div>
+    </div>
+    {% endblock content %}
+</body>
+</html>

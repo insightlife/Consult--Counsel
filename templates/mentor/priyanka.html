@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+{% extends 'master/base.html'%}
+{% load static%}
+<html lang="en">
+<head></head>
+<body>
+    {% block content %}
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-4"></div>
+            <div class="col-sm-4 align">
+                <img src="{% static 'priynka.jpg'%}" class='mentor-self-image'><br>
+                <h3>Priyanka</h3>
+                <h3>SAP ABAP/BODS Developer</h3>
+                <p class="textsize">
+                    SAP is the ERP system used by companies to manage their business. ABAP is the programming language used by SAP. And BODS is the ETL tool used for data migration.
+                </p>
+            </div>
+        </div>
+    </div>
+    {% endblock content %}
+</body>
+</html>

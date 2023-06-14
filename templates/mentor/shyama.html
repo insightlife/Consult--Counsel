@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+{% extends 'master/base.html'%}
+{% load static%}
+<html lang="en">
+<head></head>
+<body>
+    {% block content %}
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-4"></div>
+            <div class="col-sm-4 align">
+                <img src="{% static 'shyama.jpg'%}" class='mentor-self-image'><br>
+                <h3>Shyamasamarpita Nanda</h3>
+                <h3>Actor & Youtuber</h3>
+                <p class="textsize">
+                    Shyamasamarpita Nanda, from Dhenkanal Odisha, Graduated from vssut Burla, now working in Pradan currently and I am a part time YouTuber.
+                    I like acting and exploring new things. Currently I am creating content on my channel named trending Odia containing 112k subscribes.
+                </p>
+            </div>
+        </div>
+    </div>
+    {% endblock content %}
+</body>
+</html>

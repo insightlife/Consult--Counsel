@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+{% extends 'master/base.html'%}
+{% load static%}
+<html lang="en">
+<head></head>
+<body>
+    {% block content %}
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-4"></div>
+            <div class="col-sm-4 align">
+                <img src="{% static 'raju.jpg'%}" class='mentor-self-image'><br>
+                <h3>Raju Beshra</h3>
+                <h3>Freelance Dance Artist</h3>
+                <h3>rajupaypal2020@gmail.com</h3>
+                <p class="textsize">
+                    I am Raju Beshra from Rourkela, Odisha. I am a freelance dance artist from Odisha. I have won several national level solo dance competitions in N.I.T. Rourkela and I.I.T. Kharagpur.
+                    I like to express my perspectives, body flow and movements with different genres of music and especially love to do hip-hop, house and openstyle dance choreography in Indian Pop music.
+                    I wish you would like to interact with me for your good desires.
+                </p>
+            </div>
+        </div>
+    </div>
+    {% endblock content %}
+</body>
+</html>

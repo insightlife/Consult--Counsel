@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+{% extends 'master/base.html'%}
+{% load static%}
+<html lang="en">
+<head></head>
+<body>
+    {% block content %}
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-4"></div>
+            <div class="col-sm-4 align">
+                <img src="{% static 'ping.png'%}" class='mentor-self-image'><br>
+                <h3>Darshini Nayak</h3>
+                <h3>Artist & Poetess</h3>
+                <h3>darshininayak95@gmail.com</h3>
+                <p class="textsize">
+                    Truth be told, Darshini wears several hats. The kind who would strike highly engaging awkward conversations to lighten up the room with your laughter & hers. No not a comic, rather a poetess who pens down her free writings on instagram occassionally.
+                    She loves cooking poetry in her head, mostly personalized & women centric. Darshini lives with her cats, neatly organized novels & an overpacked colourful wardrobe. You can also find her sketching occassionally and baking like it's Christmas.
+                    When one thinks of Darshini, one thinks of sunflower. 🌻
+                </p>
+            </div>
+        </div>
+    </div>
+    {% endblock content %}
+</body>
+</html>

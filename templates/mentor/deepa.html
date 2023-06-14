@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+{% extends 'master/base.html'%}
+{% load static%}
+<html lang="en">
+<head></head>
+<body>
+    {% block content %}
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-4"></div>
+            <div class="col-sm-4 align">
+                <img src="{% static 'deepa.jpg'%}" class='mentor-self-image'><br>
+                <h3>Deepa Das</h3>
+                <h3>Mechanical Maintenance Engineer</h3>
+                <h3>deepadas7070@gmail.com</h3>
+                <p class="textsize">
+                    You can get the max out of your engineering studies, if you get to do it in person.
+                    I am a mechanical engineer and currently I am working as Assistant Manager at Vedanta ltd. (Bharat aluminium Company limited). I am a Mechanical maintenance engineer over there. I attend to machine breakdowns on daily basis as a maintenance shift Incharge.
+                    Further more, I am into spare parts procurement and planning, with close association with SAP HANA for planning, compliance and asset optimisation.
+                </p>
+            </div>
+        </div>
+    </div>
+    {% endblock content %}
+</body>
+</html>

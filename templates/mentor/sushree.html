@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+{% extends 'master/base.html'%}
+{% load static%}
+<html lang="en">
+<head></head>
+<body>
+    {% block content %}
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-4"></div>
+            <div class="col-sm-4 align">
+                <img src="{% static 'sushree.jpg'%}" class='mentor-self-image'><br>
+                <h3>Sushree</h3>
+                <h3>architect and an artist</h3>
+                <p class="textsize">
+                    My name is sushree , I'm an architect and an artist by passion . I'm from Rourkela, Odisha . I had a passion for art right from the very beginning but couldn't continue because of my studies .But after my graduation, life became bit chaotic where art became my escape from reality .
+                    Nature has always been my inspiration to paint more . I loved experimenting with different art forms and this phase won't stop .
+                </p>
+            </div>
+        </div>
+    </div>
+    {% endblock content %}
+</body>
+</html>
